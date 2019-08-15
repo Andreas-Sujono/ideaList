@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ideaList/static/css/main.9179e165.chunk.css",
-    "main.js": "/ideaList/static/js/main.f79aad73.chunk.js",
-    "main.js.map": "/ideaList/static/js/main.f79aad73.chunk.js.map",
+    "main.css": "/ideaList/static/css/main.0d27d53b.chunk.css",
+    "main.js": "/ideaList/static/js/main.e9c87fbe.chunk.js",
+    "main.js.map": "/ideaList/static/js/main.e9c87fbe.chunk.js.map",
     "runtime~main.js": "/ideaList/static/js/runtime~main.2d5eed7d.js",
     "runtime~main.js.map": "/ideaList/static/js/runtime~main.2d5eed7d.js.map",
     "static/js/2.abb9a3ad.chunk.js": "/ideaList/static/js/2.abb9a3ad.chunk.js",
     "static/js/2.abb9a3ad.chunk.js.map": "/ideaList/static/js/2.abb9a3ad.chunk.js.map",
     "index.html": "/ideaList/index.html",
-    "precache-manifest.03014f8ff9c95dff5f4e68c78925f70e.js": "/ideaList/precache-manifest.03014f8ff9c95dff5f4e68c78925f70e.js",
+    "precache-manifest.a579a704f3b001c2db80c636ce22bbe0.js": "/ideaList/precache-manifest.a579a704f3b001c2db80c636ce22bbe0.js",
     "service-worker.js": "/ideaList/service-worker.js",
-    "static/css/main.9179e165.chunk.css.map": "/ideaList/static/css/main.9179e165.chunk.css.map"
+    "static/css/main.0d27d53b.chunk.css.map": "/ideaList/static/css/main.0d27d53b.chunk.css.map"
   }
 }

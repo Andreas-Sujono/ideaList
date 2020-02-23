@@ -4,6 +4,8 @@ import Header from '../sideComponent/header.js'
 import Nav from '../sideComponent/nav.js'
 import Footer from '../sideComponent/footer.js'
 
+import photoMe from 'assets/photoMe.jpg'
+
 export default class About extends Component{
 	constructor(){
 		super()
@@ -20,7 +22,7 @@ export default class About extends Component{
 		    	<div className="aboutContent container">
 		    		<div style={{border:'2px double lightgrey',padding:'20px'}}>
 			    		<h3>Founder </h3> 
-			    		<img src='./static/photoMe.jpg'/>
+			    		<img src={photoMe}/>
 			    		<div className="name"> Andreas Sujono </div>
 
 			    		<div className="aboutMeDetails">

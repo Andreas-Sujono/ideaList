@@ -6,6 +6,8 @@ import NewsTop from '../sideComponent/newsTop.js'
 import NewsMid from '../sideComponent/newsMid.js'
 import Footer from '../sideComponent/footer.js'
 
+import profileDefault from 'assets/profileDefault.jpg'
+
 export default class MyProfile extends Component{
 	constructor(){
 		super()
@@ -32,7 +34,7 @@ export default class MyProfile extends Component{
 		    		<h2 className="col-md-4 col-10"> My Profile </h2>
 
 		    		<div className="content row">
-		    			<img className="col-md-4 col-10" src="./static/profileDefault.jpg"/>
+		    			<img className="col-md-4 col-10" src={profileDefault} />
 
 		    			<div className="col-md-7 col-10">
 		    				<div className="signUpInput">

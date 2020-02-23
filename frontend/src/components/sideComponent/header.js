@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 import {Link} from 'react-router-dom'
+import idealListLogo from 'assets/idealListLogo.png'
 
 export default class Header extends Component{
 	constructor(){
@@ -11,7 +12,7 @@ export default class Header extends Component{
 	render(){
 		return(
 				<div className="header"> 
-					<img src="./static/idealListLogo.png"/>
+					<img src={idealListLogo}/>
 					<Link to='/'>
 						<div className="title">
 					        <span className="header1">Idea</span>

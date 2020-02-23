@@ -1,25 +1,3 @@
-Idealist
-========
-IdeaList if an online news platform, it allows user to post news and giving out ccomments
-
-you can see it live at [https://andreas-sujono.github.io/ideaList/](https://andreas-sujono.github.io/ideaList/)
-
-<img src='./Readme-asset/demo.png' alt="ideaList demo" width='100%' />
-
-Installation
-------------
-
-Clone this repository, go to front end folder and run:
-
-    yarn install
-
-   or
-   
-    npm install
-
-for back end: `coming soon`
-
-
 ## Available Scripts
 
 - <b>for front end</b>

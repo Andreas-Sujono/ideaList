@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 
-class NewsMidSingle extends Component{
+class NewsSingleCard extends Component{
 	render(){
 		const {title,img,author,published_date,description} = this.props.content
 		return(
@@ -29,4 +29,4 @@ class NewsMidSingle extends Component{
 	}
 }
 
-export default NewsMidSingle
+export default NewsSingleCard

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Top from 'components/sharedComponents/top.js'
-import Header from 'components/sharedComponents/header.js'
-import Nav from 'components/sharedComponents/nav.js'
-import InstagramEmbed from 'react-instagram-embed';
-import NewsMidSingle from 'components/sharedComponents/newsMidSingle.js'
+import TopContact from 'components/sharedComponents/TopContact'
+import Header from 'components/sharedComponents/Header'
+import Nav from 'components/sharedComponents/Nav'
+import Footer from 'components/sharedComponents/Footer'
 
-import Footer from 'components/sharedComponents/footer.js'
+import InstagramEmbed from 'react-instagram-embed';
+import NewsSingleCard from 'components/sharedComponents/NewsSingleCard'
+
 
 import data from './utils'
 
@@ -17,7 +18,7 @@ class Home extends Component {
 
         return (
             <div className="home">
-                <Top/>
+                <TopContact/>
                 <Header/>
                 <Nav/>
 
@@ -86,7 +87,7 @@ class Home extends Component {
                         <div className="newsMidLeft col-lg-8 col-12">
                             {
                                 data.map( (item,idx) => (
-                                    <NewsMidSingle key={`${item.title}_${idx}`} content={item} />
+                                    <NewsSingleCard key={`${item.title}_${idx}`} content={item} />
                                 ))  
                             }
                         </div>

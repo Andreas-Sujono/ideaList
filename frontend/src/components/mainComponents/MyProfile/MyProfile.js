@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import Top from 'components/sharedComponents/top.js'
-import Header from 'components/sharedComponents/header.js'
-import Nav from 'components/sharedComponents/nav.js'
-import Footer from 'components/sharedComponents/footer.js'
+import TopContact from 'components/sharedComponents/TopContact'
+import Header from 'components/sharedComponents/Header'
+import Nav from 'components/sharedComponents/Nav'
+import Footer from 'components/sharedComponents/Footer'
 
 import profileDefault from 'assets/profileDefault.jpg'
 
@@ -17,7 +17,7 @@ export default class MyProfile extends Component{
 	render(){
 		return(
 			<div className="myProfile ">
-				<Top/>
+				<TopContact/>
 		    	<Header/>
 		    	<Nav/>
 

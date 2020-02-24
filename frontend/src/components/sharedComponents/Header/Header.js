@@ -4,11 +4,6 @@ import {Link} from 'react-router-dom'
 import idealListLogo from 'assets/idealListLogo.png'
 
 export default class Header extends Component{
-	constructor(){
-		super()
-
-	}
-
 	render(){
 		return(
 				<div className="header"> 

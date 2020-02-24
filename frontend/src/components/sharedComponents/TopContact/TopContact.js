@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-export default class Top extends Component{
+export default class TopContact extends Component{
 	constructor(){
 		super()
 

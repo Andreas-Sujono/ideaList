@@ -1,17 +1,13 @@
 import React, {Component} from 'react'
-import Top from '../sideComponent/top.js'
-import Header from '../sideComponent/header.js'
-import Nav from '../sideComponent/nav.js'
+import Top from 'components/sharedComponents/top.js'
+import Header from 'components/sharedComponents/header.js'
+import Nav from 'components/sharedComponents/nav.js'
 
-import Footer from '../sideComponent/footer.js'
+import Footer from 'components/sharedComponents/footer.js'
 
 import {Link} from 'react-router-dom'
 
 export default class NewsSingle extends Component{
-	constructor(){
-		super()
-	}
-
 	componentDidMount(){
 		console.log(this.props.location);
 	}

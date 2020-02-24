@@ -1,32 +1,26 @@
 import React, {Component} from 'react'
-import Top from '../sideComponent/top.js'
-import Header from '../sideComponent/header.js'
-import Nav from '../sideComponent/nav.js'
-import Footer from '../sideComponent/footer.js'
+import Top from 'components/sharedComponents/top.js'
+import Header from 'components/sharedComponents/header.js'
+import Nav from 'components/sharedComponents/nav.js'
+import Footer from 'components/sharedComponents/footer.js'
 
 import {Link} from 'react-router-dom'
 
 
 export default class SignUp extends Component{
-	constructor(){
-		super()
+    state = {
+        name:null,
+        email:null,
+        username:null,
+        password:null,
+        confirmPassword:null,
+    }
 
-		this.state={
-			name:null,
-			email:null,
-			username:null,
-			password:null,
-			confirmPassword:null,
-		}
-
-		this.handleChangeInput = this.handleChangeInput.bind(this)
-	}
-
-	handleChangeInput(e){
-		let name = e.target.name
+	handleChangeInput = event =>{
+		let name = event.target.name
 		this.setState(
 			{
-				[name] : e.target.value,
+				[name] : event.target.value,
 			}
 		)
 	}

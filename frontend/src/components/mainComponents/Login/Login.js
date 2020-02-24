@@ -1,27 +1,21 @@
 import React, {Component} from 'react'
-import Top from '../sideComponent/top.js'
-import Header from '../sideComponent/header.js'
-import Nav from '../sideComponent/nav.js'
-import Footer from '../sideComponent/footer.js'
+import Top from 'components/sharedComponents/top.js'
+import Header from 'components/sharedComponents/header.js'
+import Nav from 'components/sharedComponents/nav.js'
+import Footer from 'components/sharedComponents/footer.js'
 
 import {Link,Redirect} from 'react-router-dom'
 
 export default class About extends Component{
-	constructor(){
-		super()
+    state = {
+        username:null,
+		password:null
+    }
 
-		this.state={
-			username:null,
-			password:null
-		}
-
-		this.handleChange = this.handleChange.bind(this)
-	}
-
-	handleChange(e){
+	handleChange = event => {
 		this.setState(
 			{
-				[e.target.name] : e.target.value
+				[event.target.name] : event.target.value
 			}
 		)
 	}

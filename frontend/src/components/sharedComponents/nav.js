@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-import About from './about.js'
 import { Link as ScrollTo, animateScroll as scroll } from "react-scroll";
 
 export default class Nav extends Component{

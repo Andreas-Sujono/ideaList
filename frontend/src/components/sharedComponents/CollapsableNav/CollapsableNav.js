@@ -1,37 +1,20 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
-import { Link as ScrollLink} from 'react-scroll'
-import CollapsableNav from 'components/sharedComponents/CollapsableNav'
-
+import {Link as ScrollLink} from 'react-scroll'
 import './style.scss'
-import data from './utils'
 
-class Nav extends Component{
+class CollapsableNav extends Component {
 
-    state = {
-        collapse:true,
-        collapseClass:'hidden'
-    }
-
-    handleCollapse = () => {
-        console.log('clicked')
-        this.setState( prevState =>({
-            collapse:!prevState.collapse,
-            collapseClass:prevState.collapseClass == 'hidden'?'show':'hidden'
-        })
-        
-        )
-    }
-
-    render(){
+    render() {
+       const {collapseClass,data} = this.props
         return (
-            <>
-            <div class="nav"> 
-                <div class="mainContent">
-                    <ul>
+            <div className="collapsableNav">
+                <div className="collapseContentContainer">
+                    <div className={"collapseContent "+ collapseClass}>
+                        <ul>
                         {
                         data.map( (item,idx) => (
-                            <li className="linkIndividual" key={`${item.name}_${idx}`}> 
+                            <li className="collapseIndividual" key={`${item.name}_${idx}`}> 
                                 {
                                 item.scrollTo ?  
                                 <ScrollLink
@@ -58,17 +41,12 @@ class Nav extends Component{
                             </li>
                         ))
                         }
-                    </ul> 
-                </div>
-
-                <div class="collapsableIcon">
-                    <i class="fas fa-bars" onClick={ this.handleCollapse }></i>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <CollapsableNav collapse={this.state.collapse} collapseClass={this.state.collapseClass} data={data}/>
-            </>
-        );   
+        );
     }
 }
 
-export default Nav
+export default CollapsableNav;

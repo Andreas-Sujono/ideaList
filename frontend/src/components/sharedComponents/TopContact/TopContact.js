@@ -1,34 +1,22 @@
-import React, {Component} from 'react'
+import React from 'react'
+import './style.scss'
 
-export default class TopContact extends Component{
-	constructor(){
-		super()
-
-	}
-
-	render(){
-		return(
-			<div className="top">
-
-				<div className="contact ">
-					
-					<div className= "socialMedia">
-						<span className="contactTitle"> contact </span>
-						<i className="fa fa-facebook-square"></i>
-						<i className="fa fa-twitter"></i>
-						<i className="fa fa-instagram"></i>
-						<i className="fa fa-phone hide"></i>
-						<i className="fa fa-envelope hide"></i>
-					</div>
-
-					<div className="contact-right">
-						<span className="phoneNumber"> +65 83066172 </span>
-						<span className="email"> andreassujono@gmail.com </span>
-					</div>
-
-				</div>
-				
+const TopContact = () => {
+	return(
+		<div className="topContact row">
+			<div className= "socialMedia col-md-4 col-12">
+				<span className="contactTitle"> contact </span>
+				<i className="fab fa-facebook"></i>
+				<i className="fab fa-twitter"></i>
+				<i className="fab fa-instagram"></i>
 			</div>
-		);
-	}
+
+			<div className="contactRight col">
+				<span className="phoneNumber"> <i className="fa fa-phone"></i> (+65) 83066172 </span>
+				<span className="email"> <i className="fa fa-envelope"></i> andreassujono@gmail.com </span>
+			</div>
+		</div>
+	);
 }
+
+export default TopContact

@@ -5,6 +5,7 @@ import Nav from 'components/sharedComponents/Nav'
 import Footer from 'components/sharedComponents/Footer'
 
 import profileDefault from 'assets/profileDefault.jpg'
+import './style.scss'
 
 export default class MyProfile extends Component{
 

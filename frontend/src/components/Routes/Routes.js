@@ -1,5 +1,5 @@
 import React, { Component,Suspense } from 'react';
-import {HashRouter as Router, Route, Switch, Link, NavLink} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import routesData from './data'
 
 class Routes extends Component {

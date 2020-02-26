@@ -4,7 +4,8 @@ import Header from 'components/sharedComponents/Header'
 import Nav from 'components/sharedComponents/Nav'
 import Footer from 'components/sharedComponents/Footer'
 
-import {Link,Redirect} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import './style.scss'
 
 export default class About extends Component{
     state = {

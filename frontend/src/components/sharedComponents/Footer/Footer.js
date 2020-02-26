@@ -1,64 +1,50 @@
-import React, {Component} from 'react'
+import React from 'react'
+import './style.scss'
+import logo from 'assets/ideaListLogo.png'
 
-export default class Footer extends Component{
-	constructor(){
-		super()
+const Footer = (props) => {
+    return(
+        <div className="footer" id="footer">
+            <div class="row">
+                <div className="logoLeft col-md-2 col-12">
+                    <img src={logo} />
+                </div>
 
-		this.state = {
-			phone: false,
-			email:false
-		}
+                <div className="section1 col-md-4 col-12">
+                    <h2> Features </h2>
+                    <div class="contentSection1">
+                        <ul>
+                            <li>News/Post Admin</li>
+                            <li>Online Chat</li>
+                            <li>User Reviews</li>
+                            <li>Analytics</li>
+                        </ul>
+                    </div>
+                </div>
 
-	}
+                <div className="section2 col-md-3 col-12">
+                    <h2> Community </h2>
+                    <div class="contentSection2">
+                        <ul>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+                </div>
 
-	render(){
-		return(
-			<div className="footer" id='footer'>
-				<div className="side-left">
-					<h2>Contact</h2>
-					<span className="fa fa-phone" onClick={() => 
-						this.setState(prevState => {return {
-								phone: !prevState.phone,
-								email:false
-							}
-						}
-						)
-					}>
-						</span> 
+                <div className="section3 col-md-3 col-12">
+                    <h2> Contact </h2>
+                    <div class="contentSection3">
+                        <ul>
+                            <li>email: ideaList-hr@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
 
-					<a href="https://www.facebook.com/andreas.sujono.543" target="_blank">
-						<span className="fa fa-facebook-square facebok"></span>
-					</a>
+            </div>
+            
 
-					<a href="https://www.instagram.com/andreassujono/" target="_blank">
-						<span className="fa fa-instagram instagram"></span> 
-					</a>
-
-					<span className="fa fa-envelope" onClick={() => 
-						this.setState(prevState => {return {
-								phone: false,
-								email:!prevState.email
-							}
-						}
-						)
-					}> </span>	
-					<a href="https://www.linkedin.com/in/andreas-sujono-5b0b07164/" target="_blank">
-						<span className="fa fa-linkedin" ></span>
-					</a>
-					<a href="https://github.com/Andreas-Sujono" target="_blank">
-						<span className="fa fa-github"></span>
-					</a>
-				</div>
-
-				<div className="boxOver">
-					{this.state.email ? <span>	email: andreassujono@gmail.com </span> : null}
-					{this.state.phone ? <span>	phone: +65 83066172 </span> : null}
-				</div>
-
-				<div className="bottom">
-					<p>Created with &nbsp; <i className="fa fa-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;by Andreas Sujono</p>
-				</div>
-			</div>
-		);
-	}
+        </div>
+    )
 }
+
+export default Footer

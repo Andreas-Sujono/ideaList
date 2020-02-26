@@ -5,6 +5,7 @@ import Nav from 'components/sharedComponents/Nav'
 import Footer from 'components/sharedComponents/Footer'
 
 import {Link} from 'react-router-dom'
+import './style.scss'
 
 export default class NewsSingle extends Component{
 	componentDidMount(){

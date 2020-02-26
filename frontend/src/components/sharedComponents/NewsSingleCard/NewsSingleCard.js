@@ -1,29 +1,32 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 
+import './style.scss'
+
 class NewsSingleCard extends Component{
 	render(){
 		const {title,img,author,published_date,description} = this.props.content
 		return(
-			<div className="newsMidSingle">
+			<div className="newsSingleCard">
+				<div className="newsSingleCardContent">
+					<h2 className="newsSingleCardTitle"> 
+						{title}
+					</h2>
 
-				<div className="newsMidSingleContent">
-					<h2> <Link to={{
-						pathname:'/newsSingle',state:{content:this.props.content} 
-					}}> {title} </Link> </h2>
-
-					<div>
+					<div className="newsSingleCardImage">
 						<img src={img}/>
 					</div>
 
-					<span> <i className="fa fa-user"></i> {author}</span>
-					<span> <i className="fa fa-calender"></i> {published_date}</span>
+					<div className="newsSingleCardAttribute">
+						<span> <i className="fas fa-user"></i> {author}</span>
+						<span> <i className="fas fa-calendar-week"></i> {published_date}</span>
+					</div>
+					
 
-					<p style={{width:'80%',marginTop:'30px'}}>
+					<div className="newsSingleCardDescription">
 						{description.substring(0,200)}....
-					</p>
+					</div>
 				</div>
-
 			</div>
 		);
 	}

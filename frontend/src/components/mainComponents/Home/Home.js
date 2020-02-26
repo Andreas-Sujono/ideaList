@@ -7,7 +7,6 @@ import Footer from 'components/sharedComponents/Footer'
 import InstagramEmbed from 'react-instagram-embed';
 import NewsSingleCard from 'components/sharedComponents/NewsSingleCard'
 
-
 import data from './utils'
 
 import './style.scss'
@@ -106,14 +105,10 @@ class Home extends Component {
                             onFailure={() => {}}
                             />
                         </div>
-
                     </div>
 
-
                 </div>
-
                 <Footer/>
-                
             </div>
         );
     }

@@ -1,0 +1,27 @@
+.signup{
+    >.signupContent{
+        background-color: snow;
+        min-height: 600px;
+        padding-top: 30px;
+        padding-bottom: 80px;
+        .signUpName{
+            font-size: 28px;
+            text-align: center;
+        }
+        .signUpInput{
+            width: 50%;
+            display: block;
+            margin:auto;
+            margin-top: 40px;
+        }
+        .smallLog{
+            display: block;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+

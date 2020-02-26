@@ -21,7 +21,6 @@ export default class About extends Component{
 		)
 	}
 
-
 	render(){
 		return(
 			<div className="login">
@@ -30,7 +29,7 @@ export default class About extends Component{
 		    	<Header/>
 		    	<Nav/>
 
-		    	<div className="loginMain container">
+		    	<div className="loginContent container">
 		    		<div className='loginName'> Login </div>
 
 		    		<div className="loginInput">

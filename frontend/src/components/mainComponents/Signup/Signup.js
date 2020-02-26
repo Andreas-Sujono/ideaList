@@ -27,13 +27,13 @@ export default class SignUp extends Component{
 
 	render(){
 		return(
-			<div className="signUp">
+			<div className="signup">
 
 				<TopContact/>
 		    	<Header/>
 		    	<Nav/>
 
-		    	<div className="signUpMain container">
+		    	<div className="signupContent container">
 		    		<div className='signUpName'> Sign Up </div>
 
 		    		<div className="signUpInput">
@@ -101,14 +101,10 @@ export default class SignUp extends Component{
 						  <button type="submit" className="btn btn-primary">Sign Up</button>
 						</form>
 						<p className="smallLog">already have an account, you can just login <Link to="/login">here</Link></p>
-						
-						
 		    		</div>
-
 		    	</div>
 
 		    	<Footer/>
-
 			</div>
 
 		);

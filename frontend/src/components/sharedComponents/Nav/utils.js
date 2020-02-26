@@ -26,6 +26,10 @@ const data = [
         name:"Contact",
         scrollTo:'footer'
     },
+    {
+        name:"SignIn / SignUp",
+        pathTo:'/login'
+    },
 ]
 
 export default data

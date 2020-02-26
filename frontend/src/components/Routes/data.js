@@ -7,6 +7,11 @@ const routesData = [
         exact:true
     },
     {
+        path:'/post/:id',
+        component: lazy( () => import('components/mainComponents/NewsSingle')),
+        exact:true
+    },
+    {
         path:'/about',
         component: lazy( () => import('components/mainComponents/About')),
         exact:true

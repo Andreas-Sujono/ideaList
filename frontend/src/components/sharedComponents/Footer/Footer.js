@@ -35,13 +35,11 @@ const Footer = (props) => {
                     <h2> Contact </h2>
                     <div class="contentSection3">
                         <ul>
-                            <li>email: ideaList-hr@gmail.com</li>
+                            <li>email: ideaList_hr@gmail.com</li>
                         </ul>
                     </div>
                 </div>
-
             </div>
-            
 
         </div>
     )

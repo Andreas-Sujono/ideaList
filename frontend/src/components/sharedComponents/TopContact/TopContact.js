@@ -4,7 +4,7 @@ import './style.scss'
 const TopContact = () => {
 	return(
 		<div className="topContact row">
-			<div className= "socialMedia col-md-4 col-12">
+			<div className= "socialMedia col-md-5 col-12">
 				<span className="contactTitle"> contact </span>
 				<i className="fab fa-facebook"></i>
 				<i className="fab fa-twitter"></i>

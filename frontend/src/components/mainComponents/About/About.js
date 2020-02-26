@@ -4,7 +4,7 @@ import Header from 'components/sharedComponents/Header'
 import Nav from 'components/sharedComponents/Nav'
 import Footer from 'components/sharedComponents/Footer'
 
-import photoMe from 'assets/photoMe.jpg'
+import photoAndreas from 'assets/photoAndreas.png'
 
 import './style.scss'
 
@@ -16,17 +16,16 @@ class About extends Component {
 		    	<Header/>
 		    	<Nav/>
 		    	<div className="aboutContent container">
-		    		<div style={{border:'2px double lightgrey',padding:'20px'}}>
 			    		<h3>Founder </h3> 
-			    		<img src={photoMe}/>
+			    		<img src={photoAndreas} alt="Andreas Photo"/>
 			    		<div className="name"> Andreas Sujono </div>
 
 			    		<div className="aboutMeDetails">
-			    			Hello, my name is Andreas Sujono. I am 19 years old and currently studying in Nanyang Technological University (NTU) Singapore with Electrical and Electronic Engineering Major.
-			    			<br/>
-							I am really interested in Web programming, both front end and back end development.If you want to know more about me, you can chek out my contact below
+						A sophomore in NTU studying Electrical and Electronic Engineering. 
+						Have a really great passion for developing innovative programs. 
+						Experienced in well-versed technology and writing code that are reliable and user-friendly. 
+						Have developed several web-based applications using Python with Django framework and built the front end using ReactJs to make a responsive single page application.
 			    		</div>
-			    	</div>
 		    	</div>
 		    	<Footer/>
 			</div>

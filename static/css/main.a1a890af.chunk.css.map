@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,gBACC,QAAQ,CACR,WAAY,CACZ,wBAA2B,CAC3B,KAGA,UAAW,CACX,WAAY","file":"main.a1a890af.chunk.css","sourcesContent":["html, body, #root{\n\tmargin:0;\n\theight: 100%;\n\tbackground-color: lightgrey;\n}\n\n.app{\n\twidth: 100%;\n\theight: 100%;\n}"]}

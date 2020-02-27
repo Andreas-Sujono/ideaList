@@ -1,5 +1,6 @@
 import React, { Component,Suspense } from 'react';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom'
+import Loading from 'components/sharedComponents/Loading'
 import routesData from './data'
 
 class Routes extends Component {
@@ -7,7 +8,7 @@ class Routes extends Component {
         return (
             <div className="routes">
                 <Router>
-                    <Suspense fallback={ <div>Loading...</div> }>
+                    <Suspense fallback={Loading}>
                         <Switch>
                             {
                                 routesData.map( (item,idx) => (

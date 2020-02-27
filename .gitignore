@@ -3,6 +3,8 @@ env
 #front end
 frontend/build
 frontend/node_modules
+build
+node_modules
 
 #back end
 backEnd/node_modules

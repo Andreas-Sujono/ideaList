@@ -5,7 +5,7 @@
     "static/css/1.92c1df8e.chunk.css": "/ideaList/static/css/1.92c1df8e.chunk.css",
     "static/js/1.6c9c49bf.chunk.js": "/ideaList/static/js/1.6c9c49bf.chunk.js",
     "static/js/1.6c9c49bf.chunk.js.map": "/ideaList/static/js/1.6c9c49bf.chunk.js.map",
-    "main.css": "/ideaList/static/css/main.1f7489bc.chunk.css",
+    "main.css": "/ideaList/static/css/main.37e8fd56.chunk.css",
     "main.js": "/ideaList/static/js/main.f4e99269.chunk.js",
     "main.js.map": "/ideaList/static/js/main.f4e99269.chunk.js.map",
     "runtime-main.js": "/ideaList/static/js/runtime-main.0d2c5ef4.js",
@@ -25,14 +25,14 @@
     "static/js/8.d9d82ef5.chunk.js": "/ideaList/static/js/8.d9d82ef5.chunk.js",
     "static/js/8.d9d82ef5.chunk.js.map": "/ideaList/static/js/8.d9d82ef5.chunk.js.map",
     "index.html": "/ideaList/index.html",
-    "precache-manifest.09cce18b9cc5e82d0e40f978ce359cd4.js": "/ideaList/precache-manifest.09cce18b9cc5e82d0e40f978ce359cd4.js",
+    "precache-manifest.b1cb7b82402e39990d040b3f832d93d8.js": "/ideaList/precache-manifest.b1cb7b82402e39990d040b3f832d93d8.js",
     "service-worker.js": "/ideaList/service-worker.js",
     "static/css/1.92c1df8e.chunk.css.map": "/ideaList/static/css/1.92c1df8e.chunk.css.map",
     "static/css/5.c1145186.chunk.css.map": "/ideaList/static/css/5.c1145186.chunk.css.map",
     "static/css/6.3bcc0e25.chunk.css.map": "/ideaList/static/css/6.3bcc0e25.chunk.css.map",
     "static/css/7.3b6f3728.chunk.css.map": "/ideaList/static/css/7.3b6f3728.chunk.css.map",
     "static/css/8.313c0684.chunk.css.map": "/ideaList/static/css/8.313c0684.chunk.css.map",
-    "static/css/main.1f7489bc.chunk.css.map": "/ideaList/static/css/main.1f7489bc.chunk.css.map",
+    "static/css/main.37e8fd56.chunk.css.map": "/ideaList/static/css/main.37e8fd56.chunk.css.map",
     "static/js/4.4d750dee.chunk.js.LICENSE.txt": "/ideaList/static/js/4.4d750dee.chunk.js.LICENSE.txt",
     "static/media/ideaListLogo.png": "/ideaList/static/media/ideaListLogo.8b76790b.png",
     "static/media/photoAndreas.png": "/ideaList/static/media/photoAndreas.51fa8739.png"
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.0d2c5ef4.js",
     "static/js/4.4d750dee.chunk.js",
-    "static/css/main.1f7489bc.chunk.css",
+    "static/css/main.37e8fd56.chunk.css",
     "static/js/main.f4e99269.chunk.js"
   ]
 }

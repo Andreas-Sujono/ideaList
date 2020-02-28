@@ -4,18 +4,20 @@ import Header from 'components/sharedComponents/Header'
 import Nav from 'components/sharedComponents/Nav'
 import Footer from 'components/sharedComponents/Footer'
 import NewsSingleCard from 'components/sharedComponents/NewsSingleCard'
+import Pagination from 'components/sharedComponents/Pagination'
 
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import InstagramEmbed from 'react-instagram-embed';
 
-import {selectPostDataByPage,selectTopPostData} from 'selectors/Post/general.selector'
+import {selectPostDataByPage,selectTopPostData} from 'selectors/Post/post.selector'
+import {selectMaxPage} from 'selectors/Post/general.selector'
 
 import './style.scss'
 
 class Home extends Component {
     render() {
-        const postData = this.props.postData
+        const {postData,maxPage,currentPage} = this.props
         const [first, second, third] = this.props.topPostData //rank the top three news
         return (
             <div className="home">
@@ -78,6 +80,7 @@ class Home extends Component {
                                     <NewsSingleCard key={`${item.title}_${idx}`} content={item} />
                                 ))  
                             }
+                            <Pagination maxPage={maxPage} currentPage={currentPage}/>
                         </div>
 
                         <div className="newsMidRight col-lg-3 col-12">
@@ -105,10 +108,11 @@ class Home extends Component {
 }
 const mapStateToProps = (state,props) => { 
     let pageNumber = props.match.params.pageNumber ? props.match.params.pageNumber : 1
-    console.log('page: ',pageNumber)
     return {
         topPostData : selectTopPostData(state),
-        postData:selectPostDataByPage(state,pageNumber)
+        postData:selectPostDataByPage(state,pageNumber),
+        maxPage:selectMaxPage(state),
+        currentPage:pageNumber,
     };
 };
 

@@ -6,7 +6,7 @@ import Footer from 'components/sharedComponents/Footer'
 
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
-import {selectPostDataById} from 'selectors/Post/general.selector'
+import {selectPostDataById} from 'selectors/Post/post.selector'
 import './style.scss'
 
 class NewsSingle extends Component{

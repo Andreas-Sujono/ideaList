@@ -6,13 +6,17 @@ import Footer from 'components/sharedComponents/Footer'
 import NewsSingleCard from 'components/sharedComponents/NewsSingleCard'
 
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
 import InstagramEmbed from 'react-instagram-embed';
-import data from './utils'
+
+import {selectPostData} from 'selectors/Home/general.selector'
+
 import './style.scss'
 
 class Home extends Component {
     render() {
-        const [first, second, third] = data //rank the top three news
+        const postData = this.props.postData
+        const [first, second, third] = postData //rank the top three news
         return (
             <div className="home">
                 <TopContact/>
@@ -70,7 +74,7 @@ class Home extends Component {
                     <div className="newsMidContent row">
                         <div className="newsMidLeft col-lg-8 col-12">
                             {
-                                data.map( (item,idx) => (
+                                postData.map( (item,idx) => (
                                     <NewsSingleCard key={`${item.title}_${idx}`} content={item} />
                                 ))  
                             }
@@ -99,5 +103,10 @@ class Home extends Component {
         );
     }
 }
+const mapStateToProps = (state,props) => { 
+    return {
+        postData:selectPostData(state)
+    };
+};
 
-export default Home;
+export default  connect(mapStateToProps) (Home)

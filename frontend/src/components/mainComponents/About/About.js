@@ -17,7 +17,7 @@ class About extends Component {
 		    	<Nav/>
 		    	<div className="aboutContent container">
 			    		<h3>Founder </h3> 
-			    		<img src={photoAndreas} alt="Andreas Photo"/>
+			    		<img src={photoAndreas} alt="Andreas Sujono"/>
 			    		<div className="name"> Andreas Sujono </div>
 
 			    		<div className="aboutMeDetails">

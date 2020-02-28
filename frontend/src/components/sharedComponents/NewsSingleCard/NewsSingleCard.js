@@ -13,7 +13,7 @@ const NewsSingleCard = props => {
 				</h2>
 
 				<div className="newsSingleCardImage">
-					<img src={img}/>
+					<img src={img} alt={`post id:${id}`}/>
 				</div>
 
 				<div className="newsSingleCardAttribute">

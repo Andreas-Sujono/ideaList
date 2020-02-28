@@ -8,7 +8,7 @@ class Routes extends Component {
         return (
             <div className="routes">
                 <Router>
-                    <Suspense fallback={Loading}>
+                    <Suspense fallback={<Loading/>}>
                         <Switch>
                             {
                                 routesData.map( (item,idx) => (

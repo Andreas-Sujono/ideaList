@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import generalReducer from './reducers/general.reducer'
 
-const homeReducer = combineReducers({
+const postReducer = combineReducers({
     generalReducer
 })
 
-export default homeReducer
+export default postReducer
 

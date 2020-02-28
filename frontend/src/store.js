@@ -1,9 +1,12 @@
 import {createStore, combineReducers} from 'redux'
-import homeReducer from 'reducers/Home'
+import postReducer from 'reducers/Post'
 
-const reducer = combineReducers({
-    homeReducer
+const rootReducer = combineReducers({
+    postReducer
 })
-const store = createStore(reducer,{},window.devToolsExtension && window.devToolsExtension());
+
+const store = createStore(rootReducer,
+    {},window.devToolsExtension && window.devToolsExtension()
+);
 
 export default store

@@ -5,19 +5,14 @@ import Nav from 'components/sharedComponents/Nav'
 import Footer from 'components/sharedComponents/Footer'
 
 import {Link} from 'react-router-dom'
-import data from './utils'
+import {connect} from 'react-redux'
+import {selectPostDataById} from 'selectors/Post/general.selector'
 import './style.scss'
 
-export default class NewsSingle extends Component{
+class NewsSingle extends Component{
 	render(){
-		const postId = this.props.match.params.id
-		let currentData = {}
-		for(var i = 0;i < data.length;i++){
-			if(data[i].id == postId){
-				currentData = data[i]
-				break
-			}	
-		}
+		const {currentData} = this.props
+
 		return(
 			<div className="newsSingle">
 				<TopContact/>
@@ -34,12 +29,12 @@ export default class NewsSingle extends Component{
 					</div> 
 
 					<div className="newsSingleContentImage">
-						<img src={currentData.img}/>
+						<img src={currentData.img} alt={`post id:${this.props.match.params.id}`}/>
 					</div>
 
-					<p className="newsSingleContentDescription" style={{marginTop:'30px'}}>
-						{currentData.description.split('\n').map(x => <p> {x} </p>)}
-					</p>
+					<div className="newsSingleContentDescription" style={{marginTop:'30px'}}>
+						{currentData.description.split('\n').map(x => <p key={Math.random()}> {x} </p>)}
+					</div>
 
 					<div className='back'> <Link to='/'> &lt; back </Link></div>
 		    	</div> 
@@ -48,3 +43,12 @@ export default class NewsSingle extends Component{
 		);
 	}
 }
+
+const mapStateToProps = (state,props) => { 
+	const postId = props.match.params.id
+    return {
+        currentData:selectPostDataById(state,postId)
+    };
+};
+
+export default connect( mapStateToProps)(NewsSingle)

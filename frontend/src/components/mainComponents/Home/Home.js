@@ -9,14 +9,14 @@ import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import InstagramEmbed from 'react-instagram-embed';
 
-import {selectPostData} from 'selectors/Home/general.selector'
+import {selectPostDataByPage,selectTopPostData} from 'selectors/Post/general.selector'
 
 import './style.scss'
 
 class Home extends Component {
     render() {
         const postData = this.props.postData
-        const [first, second, third] = postData //rank the top three news
+        const [first, second, third] = this.props.topPostData //rank the top three news
         return (
             <div className="home">
                 <TopContact/>
@@ -104,8 +104,11 @@ class Home extends Component {
     }
 }
 const mapStateToProps = (state,props) => { 
+    let pageNumber = props.match.params.pageNumber ? props.match.params.pageNumber : 1
+    console.log('page: ',pageNumber)
     return {
-        postData:selectPostData(state)
+        topPostData : selectTopPostData(state),
+        postData:selectPostDataByPage(state,pageNumber)
     };
 };
 

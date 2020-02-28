@@ -4,15 +4,21 @@ import Header from 'components/sharedComponents/Header'
 import Nav from 'components/sharedComponents/Nav'
 import Footer from 'components/sharedComponents/Footer'
 import NewsSingleCard from 'components/sharedComponents/NewsSingleCard'
+import Pagination from 'components/sharedComponents/Pagination'
 
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
 import InstagramEmbed from 'react-instagram-embed';
-import data from './utils'
+
+import {selectPostDataByPage,selectTopPostData} from 'selectors/Post/post.selector'
+import {selectMaxPage} from 'selectors/Post/general.selector'
+
 import './style.scss'
 
 class Home extends Component {
     render() {
-        const [first, second, third] = data //rank the top three news
+        const {postData,maxPage,currentPage} = this.props
+        const [first, second, third] = this.props.topPostData //rank the top three news
         return (
             <div className="home">
                 <TopContact/>
@@ -70,10 +76,11 @@ class Home extends Component {
                     <div className="newsMidContent row">
                         <div className="newsMidLeft col-lg-8 col-12">
                             {
-                                data.map( (item,idx) => (
+                                postData.map( (item,idx) => (
                                     <NewsSingleCard key={`${item.title}_${idx}`} content={item} />
                                 ))  
                             }
+                            <Pagination maxPage={maxPage} currentPage={currentPage}/>
                         </div>
 
                         <div className="newsMidRight col-lg-3 col-12">
@@ -99,5 +106,14 @@ class Home extends Component {
         );
     }
 }
+const mapStateToProps = (state,props) => { 
+    let pageNumber = props.match.params.pageNumber ? props.match.params.pageNumber : 1
+    return {
+        topPostData : selectTopPostData(state),
+        postData:selectPostDataByPage(state,pageNumber),
+        maxPage:selectMaxPage(state),
+        currentPage:pageNumber,
+    };
+};
 
-export default Home;
+export default  connect(mapStateToProps) (Home)

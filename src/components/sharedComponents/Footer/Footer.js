@@ -5,14 +5,14 @@ import logo from 'assets/ideaListLogo.png'
 const Footer = (props) => {
     return(
         <div className="footer" id="footer">
-            <div class="row">
+            <div className="row">
                 <div className="logoLeft col-md-2 col-12">
-                    <img src={logo} />
+                    <img src={logo} alt="Company Logo"/>
                 </div>
 
                 <div className="section1 col-md-4 col-12">
                     <h2> Features </h2>
-                    <div class="contentSection1">
+                    <div className="contentSection1">
                         <ul>
                             <li>News/Post Admin</li>
                             <li>Online Chat</li>
@@ -24,7 +24,7 @@ const Footer = (props) => {
 
                 <div className="section2 col-md-3 col-12">
                     <h2> Community </h2>
-                    <div class="contentSection2">
+                    <div className="contentSection2">
                         <ul>
                             <li>Github</li>
                         </ul>
@@ -33,7 +33,7 @@ const Footer = (props) => {
 
                 <div className="section3 col-md-3 col-12">
                     <h2> Contact </h2>
-                    <div class="contentSection3">
+                    <div className="contentSection3">
                         <ul>
                             <li>email: ideaList_hr@gmail.com</li>
                         </ul>

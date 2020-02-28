@@ -17,7 +17,7 @@ class Nav extends Component{
         console.log('clicked')
         this.setState( prevState =>({
             collapse:!prevState.collapse,
-            collapseClass:prevState.collapseClass == 'hidden'?'show':'hidden'
+            collapseClass:prevState.collapseClass === 'hidden'?'show':'hidden'
         })
         
         )
@@ -26,8 +26,8 @@ class Nav extends Component{
     render(){
         return (
             <>
-            <div class="nav"> 
-                <div class="mainContent">
+            <div className="nav"> 
+                <div className="mainContent">
                     <ul>
                         {
                         data.map( (item,idx) => (
@@ -61,8 +61,8 @@ class Nav extends Component{
                     </ul> 
                 </div>
 
-                <div class="collapsableIcon">
-                    <i class="fas fa-bars" onClick={ this.handleCollapse }></i>
+                <div className="collapsableIcon">
+                    <i className="fas fa-bars" onClick={ this.handleCollapse }></i>
                 </div>
             </div>
             <CollapsableNav collapse={this.state.collapse} collapseClass={this.state.collapseClass} data={data}/>

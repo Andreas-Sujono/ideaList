@@ -1,6 +1,10 @@
 env
 
 #front end
+frontEnd
 build
 node_modules
+
+#back end
+backEnd
 

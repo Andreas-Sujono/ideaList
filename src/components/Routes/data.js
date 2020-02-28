@@ -7,6 +7,10 @@ const routesData = [
         exact:true
     },
     {
+        path:'/page/:pageNumber',
+        component: lazy( () => import('components/mainComponents/Home')),
+    },
+    {
         path:'/post/:id',
         component: lazy( () => import('components/mainComponents/NewsSingle')),
         exact:true

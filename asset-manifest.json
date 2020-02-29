@@ -5,9 +5,9 @@
     "static/css/1.030f7a46.chunk.css": "/ideaList/static/css/1.030f7a46.chunk.css",
     "static/js/1.e21dfaac.chunk.js": "/ideaList/static/js/1.e21dfaac.chunk.js",
     "static/js/1.e21dfaac.chunk.js.map": "/ideaList/static/js/1.e21dfaac.chunk.js.map",
-    "main.css": "/ideaList/static/css/main.3c646e99.chunk.css",
-    "main.js": "/ideaList/static/js/main.f4e99269.chunk.js",
-    "main.js.map": "/ideaList/static/js/main.f4e99269.chunk.js.map",
+    "main.css": "/ideaList/static/css/main.30ce1990.chunk.css",
+    "main.js": "/ideaList/static/js/main.00097bc6.chunk.js",
+    "main.js.map": "/ideaList/static/js/main.00097bc6.chunk.js.map",
     "runtime-main.js": "/ideaList/static/js/runtime-main.c845c782.js",
     "runtime-main.js.map": "/ideaList/static/js/runtime-main.c845c782.js.map",
     "static/js/4.4d750dee.chunk.js": "/ideaList/static/js/4.4d750dee.chunk.js",
@@ -25,14 +25,14 @@
     "static/js/8.a10fefb9.chunk.js": "/ideaList/static/js/8.a10fefb9.chunk.js",
     "static/js/8.a10fefb9.chunk.js.map": "/ideaList/static/js/8.a10fefb9.chunk.js.map",
     "index.html": "/ideaList/index.html",
-    "precache-manifest.1ce7cc29f105f7540431e47f41ba0b7b.js": "/ideaList/precache-manifest.1ce7cc29f105f7540431e47f41ba0b7b.js",
+    "precache-manifest.22dce3fcfb7a1356fe6b2c46e716f366.js": "/ideaList/precache-manifest.22dce3fcfb7a1356fe6b2c46e716f366.js",
     "service-worker.js": "/ideaList/service-worker.js",
     "static/css/1.030f7a46.chunk.css.map": "/ideaList/static/css/1.030f7a46.chunk.css.map",
     "static/css/5.2f51c489.chunk.css.map": "/ideaList/static/css/5.2f51c489.chunk.css.map",
     "static/css/6.2e5ef77d.chunk.css.map": "/ideaList/static/css/6.2e5ef77d.chunk.css.map",
     "static/css/7.f57fbaca.chunk.css.map": "/ideaList/static/css/7.f57fbaca.chunk.css.map",
     "static/css/8.1036e6bf.chunk.css.map": "/ideaList/static/css/8.1036e6bf.chunk.css.map",
-    "static/css/main.3c646e99.chunk.css.map": "/ideaList/static/css/main.3c646e99.chunk.css.map",
+    "static/css/main.30ce1990.chunk.css.map": "/ideaList/static/css/main.30ce1990.chunk.css.map",
     "static/js/4.4d750dee.chunk.js.LICENSE.txt": "/ideaList/static/js/4.4d750dee.chunk.js.LICENSE.txt",
     "static/media/ideaListLogo.png": "/ideaList/static/media/ideaListLogo.8b76790b.png",
     "static/media/photoAndreas.png": "/ideaList/static/media/photoAndreas.51fa8739.png"
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.c845c782.js",
     "static/js/4.4d750dee.chunk.js",
-    "static/css/main.3c646e99.chunk.css",
-    "static/js/main.f4e99269.chunk.js"
+    "static/css/main.30ce1990.chunk.css",
+    "static/js/main.00097bc6.chunk.js"
   ]
 }

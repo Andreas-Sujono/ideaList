@@ -14,3 +14,11 @@
         }
    } 
 }
+
+@media screen and (max-width:750px){
+    .newsSingle{
+        >.newsSingleContent{
+            img{width: 100%;}
+        }
+    }
+}

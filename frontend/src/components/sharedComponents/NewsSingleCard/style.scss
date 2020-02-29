@@ -18,3 +18,12 @@
         }
     }
 }
+
+@media screen and (max-width:750px){
+    .newsSingleCard{
+        >.newsSingleCardContent{
+            >.newsSingleCardImage img{width: 100%;}
+            >.newsSingleCardDescription{width:100%;}
+        }
+    }
+}

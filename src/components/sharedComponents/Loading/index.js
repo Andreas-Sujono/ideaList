@@ -4,9 +4,11 @@ import './style.scss'
 
 const Loading = () => {
     return(
-        <div className="loadingPage">
-            <div className="loaderSpin"></div>
-            <h4> Loading....</h4>
+        <div className="loadingPageContainer">
+            <div className="loadingPage">
+                <div className="loaderSpin"></div>
+                <h4> Loading....</h4>
+            </div>
         </div>
     )
 }

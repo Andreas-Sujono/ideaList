@@ -9,6 +9,9 @@ const TopContact = () => {
 				<i className="fab fa-facebook"></i>
 				<i className="fab fa-twitter"></i>
 				<i className="fab fa-instagram"></i>
+
+				<i className="fa fa-phone topContact-mobile"></i> 
+				<i className="fa fa-envelope topContact-mobile"></i>
 			</div>
 
 			<div className="contactRight col">

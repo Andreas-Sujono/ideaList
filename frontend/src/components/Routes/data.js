@@ -31,6 +31,11 @@ const routesData = [
         exact:true
     },
     {
+        path:'/admin',
+        component: lazy( () => import('components/mainComponents/Admin')),
+        exact:true
+    },
+    {
         path:'/test/loading',
         component: lazy( () => import('components/sharedComponents/Loading')),
         exact:true

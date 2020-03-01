@@ -2,7 +2,7 @@
    >.newsSingleContent{
         background-color: snow;
         padding: 50px 30px;
-        img{
+        >.newsSingleContentImage{
             width:80%;
             margin-top: 20px;
         }
@@ -18,7 +18,7 @@
 @media screen and (max-width:750px){
     .newsSingle{
         >.newsSingleContent{
-            img{width: 100%;}
+            >.newsSingleContentImage{width: 100%;}
         }
     }
 }

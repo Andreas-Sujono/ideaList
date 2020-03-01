@@ -3,6 +3,7 @@ import TopContact from 'components/sharedComponents/TopContact'
 import Header from 'components/sharedComponents/Header'
 import Nav from 'components/sharedComponents/Nav'
 import Footer from 'components/sharedComponents/Footer'
+import Reviews from 'components/mainComponents/Reviews'
 
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
@@ -28,15 +29,15 @@ class NewsSingle extends Component{
 						<button className="btn btn-success"> share on twitter </button>
 					</div> 
 
-					<div className="newsSingleContentImage">
-						<img src={currentData.img} alt={`post id:${this.props.match.params.id}`}/>
-					</div>
-
+					<img src={currentData.img} className="newsSingleContentImage" alt={`post id:${this.props.match.params.id}`}/>
+					
 					<div className="newsSingleContentDescription" style={{marginTop:'30px'}}>
 						{currentData.description.split('\n').map(x => <p key={Math.random()}> {x} </p>)}
 					</div>
 
 					<div className='back'> <Link to='/'> &lt; back </Link></div>
+
+					<Reviews postId={currentData.id}/>
 		    	</div> 
 		    	<Footer/>
 			</div>

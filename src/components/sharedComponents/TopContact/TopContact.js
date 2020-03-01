@@ -16,7 +16,7 @@ const TopContact = () => {
 
 			<div className="contactRight col">
 				<span className="phoneNumber"> <i className="fa fa-phone"></i> (+65) 83066172 </span>
-				<span className="email"> <i className="fa fa-envelope"></i> andreassujono@gmail.com </span>
+				<span className="email"> <i className="fa fa-envelope"></i> ideaList_hr@gmail.com</span>
 			</div>
 		</div>
 	);

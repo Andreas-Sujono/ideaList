@@ -20,5 +20,13 @@
             margin-top: 10px;
         }
     }
-
 } 
+
+@media screen and (max-width:700px){
+    .login{
+        >.loginContent{
+            .loginInput{width: 80%;}
+        }
+    }
+}
+

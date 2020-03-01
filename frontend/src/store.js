@@ -1,8 +1,10 @@
 import {createStore, combineReducers} from 'redux'
 import postReducer from 'reducers/Post'
+import reviewsReducer from 'reducers/Reviews'
 
 const rootReducer = combineReducers({
-    postReducer
+    postReducer,
+    reviewsReducer
 })
 
 const store = createStore(rootReducer,

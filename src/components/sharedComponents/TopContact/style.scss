@@ -1,0 +1,33 @@
+.topContact{
+	background-color: rgb(92,92,92);
+    width: 100%;
+    height: auto;
+	color:white;
+	font-size: 16px;
+    z-index: 50;
+    text-align: center;
+    padding:6px;
+    margin:0;
+    
+    .topContact-mobile{
+        display:none
+    }
+    >.socialMedia > i{
+        margin-left: 10px;  
+    }
+    >.contactRight{
+        >span{margin-left: 20px;}
+    }
+}
+
+@media Screen and (max-width:750px){
+    .topContact{
+        font-size: 15px;
+        .topContact-mobile{
+            display: inline;
+        }
+        .contactRight{
+            display: none;
+        }
+    }
+}

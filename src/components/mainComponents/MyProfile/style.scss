@@ -1,0 +1,22 @@
+.myProfileMain{
+    background-color: snow;
+    min-height: 550px; 
+    padding-top: 50px;
+    padding-bottom:50px;
+
+    h2{
+        margin-left: 5%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    img{ 
+        display: block;
+        margin:auto; margin-left: 5%; margin-bottom: 40px;
+        border-radius: 50%; 
+        min-width: 300px;
+        height: auto; 
+    }
+    .signUpInput{width: 80%;margin-top: -10px;}
+
+} 

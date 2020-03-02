@@ -21,15 +21,16 @@
             word-wrap: break-word;
             margin-top: 10px;
             resize: none;
+            border-bottom:1px solid grey; 
+            transition: all 0.5s;
         }
         >.addReviewInput:focus{
             outline:none;
+            border-bottom:2px solid black; 
         }
         >hr{
-            width: 80%;
             margin-top: 0;
-            margin-left: 50px;
-            border:1px solid grey;
+            visibility: hidden;
         }
         >button:first-child{
             margin-right: 10px;

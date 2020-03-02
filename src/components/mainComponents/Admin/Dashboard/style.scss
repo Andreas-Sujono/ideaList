@@ -1,0 +1,19 @@
+.dashboard{
+    .dashboardMainGraph{
+        background-color: white;
+        padding:50px;
+        height: 550px;
+        margin-top: 20px;
+        margin-left: 20px;
+        border:1px solid lightgrey;
+        border-radius: 20px;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .dashboard{
+        .dashboardMainGraph{margin-left: 0;}
+    }
+    
+}

@@ -17,6 +17,17 @@ const data = [
 
     },
     {
+        name:"Home",
+        pathTo:'/',
+        logo:'<i class="fas fa-home"></i>'
+
+    },
+    {
+        name:"My Profile",
+        pathTo:'/admin',
+        logo:'<i class="fas fa-user"></i>'
+    },
+    {
         name:"Posts",
         pathTo:'/admin',
         logo:'<i class="fas fa-chart-line"></i>'

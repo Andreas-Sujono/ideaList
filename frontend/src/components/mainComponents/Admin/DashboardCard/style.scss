@@ -1,0 +1,19 @@
+.dashboardCard{
+    min-width: 400px;
+    min-height: 200px;
+    background-color: white;
+    padding:20px 10px ;
+    border:1px solid lightgrey;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 40px;
+    margin-top: 20px;
+    >h3{
+        font-size: 18px;
+    }
+    >.dasboardCardCContent{
+        text-align: center;
+        font-size: 36px;
+        color: rgb(3, 45, 143);
+    }
+}

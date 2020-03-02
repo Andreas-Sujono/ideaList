@@ -27,8 +27,12 @@ const data = [
         scrollTo:'footer'
     },
     {
-        name:"SignIn / SignUp",
+        name:"Sign in",
         pathTo:'/login'
+    },
+    {
+        name:"Admin",
+        pathTo:'/admin'
     },
 ]
 

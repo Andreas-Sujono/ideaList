@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,uBAEQ,eAAgB","file":"12.03aab04d.chunk.css","sourcesContent":[".posts{\n    .tableContainer{\n        margin-top: 30px;\n    }\n} \n\n"]}

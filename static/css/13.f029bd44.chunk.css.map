@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,cACU,WAAW,CADrB,WAGQ,eAAgB","file":"13.f029bd44.chunk.css","sourcesContent":[".charts{\n    .plot{margin:auto}\n    >h5{\n        margin-top: 20px;\n    }\n} \n\n"]}

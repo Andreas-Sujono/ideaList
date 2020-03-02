@@ -8,6 +8,7 @@ const initialState = {
             title:'Five key Premier League matches to watch in the coming weeks as season kicks off',
             category:'Sports',
             author:'Andreas Sujono',
+            authorId:321423,
             published_date:'10/08/2019',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown \
@@ -35,6 +36,7 @@ const initialState = {
             title:'Singapore ranks 32 out of 40 in new index on work-life balance',
             category:'Life',
             author:'Andreas Sujono',
+            authorId:321423,
             published_date:'10/08/2019',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown \
@@ -50,6 +52,7 @@ const initialState = {
             title:'Noodle dishes for calorie counters at Hougang Fishball Minced Meat Noodles',
             category:'Food',
             author:'Andreas Sujono',
+            authorId:321423,
             published_date:'10/08/2019',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown \
@@ -65,6 +68,7 @@ const initialState = {
             title:'Noodle dishes for calorie counters at Hougang Fishball Minced Meat Noodles',
             category:'Food',
             author:'Andreas Sujono',
+            authorId:321423,
             published_date:'10/08/2019',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown \
@@ -80,6 +84,7 @@ const initialState = {
             title:'Singapore ranks 32 out of 40 in new index on work-life balance',
             category:'Life',
             author:'Andreas Sujono',
+            authorId:321423,
             published_date:'10/08/2019',
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown \

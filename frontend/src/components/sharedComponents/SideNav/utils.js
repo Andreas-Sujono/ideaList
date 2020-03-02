@@ -12,30 +12,30 @@
 const data = [
     {
         name:"Dashboard",
-        pathTo:'/admin',
+        pathTo:'/admin/dashboard',
         logo:'<i class="fab fa-houzz"></i>'
 
+    },
+    {
+        name:"My Profile",
+        pathTo:'/admin/myProfile',
+        logo:'<i class="fas fa-user"></i>'
+    },
+    {
+        name:"Posts",
+        pathTo:'/admin/posts',
+        logo:'<i class="fas fa-paste"></i>'
+    },
+    {
+        name:"Charts",
+        pathTo:'/admin/charts',
+        logo:'<i class="fas fa-chart-line"></i>'
     },
     {
         name:"Home",
         pathTo:'/',
         logo:'<i class="fas fa-home"></i>'
 
-    },
-    {
-        name:"My Profile",
-        pathTo:'/admin',
-        logo:'<i class="fas fa-user"></i>'
-    },
-    {
-        name:"Posts",
-        pathTo:'/admin',
-        logo:'<i class="fas fa-chart-line"></i>'
-    },
-    {
-        name:"Charts",
-        pathTo:'/admin',
-        logo:'<i class="fas fa-paste"></i>'
     },
     {
         name:"Logout",

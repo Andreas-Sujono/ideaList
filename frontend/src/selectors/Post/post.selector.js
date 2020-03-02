@@ -27,5 +27,9 @@ export const selectPostDataByPage = (state,page=1,postPerPage = postVariable.pos
 export const selectPostDataById = (state,id) =>{
     return state[reducerName].generalReducer['postData'].filter( item => item.id == id)[0]
 }
+
+export const selectPostDataByUserId = (state,userId) =>{
+    return state[reducerName].generalReducer['postData'].filter( item => item.authorId == userId)
+}
     
 
